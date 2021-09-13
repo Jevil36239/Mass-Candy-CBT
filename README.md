@@ -7,6 +7,7 @@ Inside got :
 - an auto Uploading Shell
 - Saved Files if get's Exploided
 - Managing Multi Threading make it's Fast
+- oPEn sOurCe
 - Idk it makes my phone freezed :v
 ```
 
